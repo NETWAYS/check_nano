@@ -6,7 +6,7 @@ Link to the offical product:
 https://inveo.com.pl/monitoring-en/nano-temperature-sensor/#:~:text=Nano%20Temperature%20Sensor%20PoE%20is%20an%20IP%20thermometer%20designed%20for,3af%20(Power%20over%20Ethernet).
 
 ### Checks
-The check command will ouput the temperature based on your "Inveo Nano Sensore" The alarm parameters are set in the administration panel of your sensor. The Plugin will query your sensors xml page to get all the information it needs. 
+The check command will ouput the temperature based on your "Inveo Nano Sensore". The alarm parameters are set in the administration panel of your sensor. The Plugin will query your sensors xml page to get all the information it needs. 
 
 Monitoring states:
 - OK = alarm is off 
@@ -28,7 +28,7 @@ options:
   -H HOST, --host HOST  Nano sensor hostname (Premise)
 ```
 
-Your host parameter "host" will get inserted into "http://{args.host}/status.xml" so the final URL you will query against will be:
+Your host parameter will get inserted into "http://{args.host}/status.xml" so the final URL you will query against will be:
 ```
 http://<examle-host.com>/status.xml
 ```
