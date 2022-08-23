@@ -13,20 +13,22 @@ Monitoring states:
 - CRITICAL = alarm is on
 - UNKOWN = sensor is not reachable
 
-### Usage
+### Usage:
 ```
-# Arguments
+# Manual execution example
+./check_nano.py -H <exampe-host.com>
+check_nano: OK temp=25.6&deg;C, alarm=False|'temp'=25.6
+```
+### Arguments:
+```
 usage: check_nano.py [-h] -H HOST
 
 options:
   -h, --help            show this help message and exit
   -H HOST, --host HOST  Nano sensor hostname (Premise)
-
-# Manual execution example
-./check_nano.py -H <exampe-host.com>
-check_nano: OK temp=25.6&deg;C, alarm=False|'temp'=25.6
 ```
-Your host parameter will get insertet into "http://{args.host}/status.xml" so the final URL u will query against will be:
+
+Your host parameter "host" will get inserted into "http://{args.host}/status.xml" so the final URL you will query against will be:
 ```
 http://<examle-host.com>/status.xml
 ```
