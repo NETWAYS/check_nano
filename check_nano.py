@@ -71,7 +71,7 @@ def main():
         # Output of temp and alarm.
         # The "°C" is a html entity to make it readable in icinga
         print(
-            f"check_nano:{states[state]} temp={data['temp1']}&deg;C," +
+            f"check_nano: {states[state]} temp={data['temp1']}&deg;C," +
             f" alarm={data['on']}|'temp'={data['temp1']}"
         )
         sys.exit(state)
