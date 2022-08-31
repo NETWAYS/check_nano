@@ -3,7 +3,7 @@
 Check command to build icinga checks against "Inveo Nano Temperature Sensor"
 
 Link to the offical product:  
-https://inveo.com.pl/monitoring-en/nano-temperature-sensor/#:~:text=Nano%20Temperature%20Sensor%20PoE%20is%20an%20IP%20thermometer%20designed%20for,3af%20(Power%20over%20Ethernet).
+[https://inveo.com](https://inveo.com.pl/monitoring-en/nano-temperature-sensor/#:~:text=Nano%20Temperature%20Sensor%20PoE%20is%20an%20IP%20thermometer%20designed%20for,3af%20(Power%20over%20Ethernet))
 
 ### Checks
 The check command will ouput the temperature based on your "Inveo Nano Sensor". The alarm parameters are set in the administration panel of your sensor. The Plugin will query your sensor xml page to get all the information it needs. 
