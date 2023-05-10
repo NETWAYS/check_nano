@@ -1,25 +1,22 @@
-### check_nano.py
-***
-Check command to build icinga checks against "Inveo Nano Temperature Sensor"
+# check_nano.py
 
-Link to the offical product:  
-[https://inveo.com](https://inveo.com.pl/monitoring-en/nano-temperature-sensor/#:~:text=Nano%20Temperature%20Sensor%20PoE%20is%20an%20IP%20thermometer%20designed%20for,3af%20(Power%20over%20Ethernet))
+Check command to build icinga checks against "Inveo Nano Temperature Sensor".
 
-### Checks
-The check command will ouput the temperature based on your "Inveo Nano Sensor". The alarm parameters are set in the administration panel of your sensor. The Plugin will query your sensor xml page to get all the information it needs. 
+Link to the offical product: [https://inveo.com](https://inveo.com.pl/monitoring-en/nano-temperature-sensor/#:~:text=Nano%20Temperature%20Sensor%20PoE%20is%20an%20IP%20thermometer%20designed%20for,3af%20(Power%20over%20Ethernet))
+
+The check command will ouput the temperature based on your "Inveo Nano Sensor". The alarm parameters are set in the administration panel of your sensor. The Plugin will query your sensor xml page to get all the information it needs.
 
 Monitoring states:
-- OK = alarm is off 
+- OK = alarm is off
 - CRITICAL = alarm is on
 - UNKOWN = sensor is not reachable
 
-### Usage:
-```
-# Manual execution example
-./check_nano.py -H <exampe-host.com>
-check_nano: OK temp=25.6&deg;C, alarm=False|'temp'=25.6
-```
-### Arguments:
+## Installation
+
+The plugin requires at least Python 3.
+
+## Usage
+
 ```
 usage: check_nano.py [-h] -H HOST
 
@@ -33,8 +30,16 @@ Your host parameter will get inserted into "http://{args.host}/status.xml" so th
 http://<examle-host.com>/status.xml
 ```
 
-### License
-***
+# Example
+
+```
+# Manual execution example
+./check_nano.py -H <exampe-host.com>
+check_nano: OK temp=25.6&deg;C, alarm=False|'temp'=25.6
+```
+
+# License
+
 The MIT License
 
 Copyright 2022 NETWAYS GmbH
