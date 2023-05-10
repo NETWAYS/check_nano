@@ -50,7 +50,7 @@ def main():
     state = 3
 
     try:
-        handler = urlopen(url)
+        handler = urlopen(url) # pylint: disable=consider-using-with
         # Convert UTF-8 to ISO here, device deliver 8859-1 encodings
         content = handler.read().decode(encoding="iso-8859-1")
         root = ET.fromstring(content)
